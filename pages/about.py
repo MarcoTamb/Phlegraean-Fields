@@ -1,3 +1,6 @@
+"""
+pages/about.py: Static markdown page for context about Campi Flegrei.
+"""
 from dash import register_page, html, dcc
 
 register_page(__name__, path='/about')
@@ -30,6 +33,8 @@ The most famous evidence is the Roman Macellum of Pozzuoli. Three of its standin
 
 This dashboard tracks the seismic tremors associated with this ongoing uplift cycle, pulling data from INGV (updated every hour) to provide a clear view of the volcano's current activity. '''
 
+
+# Layout assembles markdown text blocks and reference images in a centered layout
 layout = [
     html.Div(
         dcc.Markdown(markdown_text_1),
