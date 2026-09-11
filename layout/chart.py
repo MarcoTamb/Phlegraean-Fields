@@ -188,7 +188,7 @@ def three_d_chart(chart_data, camera_status=dict(
 
 def heatmap(chart_data):
     """
-    Generates a 2D Mapbox density heatmap of earthquakes based on magnitude and frequency[cite: 1].
+    Generates a 2D Mapbox density heatmap of earthquakes based on magnitude and frequency.
     """
     fig = px.density_mapbox(chart_data,
                             lat='Latitude',
@@ -264,7 +264,7 @@ def vertical(chart_data, axis_choice):
 def update_description(type_of_chart):
     """
     Dynamically updates the descriptive title above the chart wrapper
-    whenever the user switches the map visualization type[cite: 1].
+    whenever the user switches the map visualization type.
     """
     if type_of_chart == '3D-Map':
         return "Interactive 3D map of all the earthquakes' epicenters"
