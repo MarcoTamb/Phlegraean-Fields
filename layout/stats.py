@@ -46,7 +46,7 @@ stats_wrapper = html.Div(
 )
 def update_chart(chart_type, min_magnitudo, last_date_slider, depth, refresh_data):
     """
-    Main routing callback for generating statistical charts based on UI controls[cite: 5].
+    Main routing callback for generating statistical charts based on UI controls.
     """
     first_date = (date.today() - MIN_DATE) + timedelta(days=last_date_slider[0])
     last_date = (date.today() - MIN_DATE) + timedelta(days=last_date_slider[1])
@@ -149,7 +149,7 @@ def magnitude_chart(chart_data):
 
 
 def depth_chart(chart_data):
-    """Generates a histogram distributing the depths of recorded earthquakes[cite: 5]."""
+    """Generates a histogram distributing the depths of recorded earthquakes."""
     fig = px.histogram(chart_data, x='Depth/Km', labels={
         'x_position': 'E/W offset (km)', 'y_position': 'N/S offset (km)', 'Depth/Km': 'Depth (km)',
         'Magnitude': 'Magnitude', 'Time': 'Time', '#EventID': 'EventID',
