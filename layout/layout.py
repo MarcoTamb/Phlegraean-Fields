@@ -1,5 +1,5 @@
 """
-Defines the main application shell and navigation bar[cite: 4].
+Defines the main application shell and navigation bar.
 Contains the global interval timer for automatic data refreshing.
 """
 from dash import html, callback, Output, Input, State, page_container, dcc
